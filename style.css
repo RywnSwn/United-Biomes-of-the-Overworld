@@ -1,8 +1,3 @@
-/* =============================================
-   UNITED BIOMES OF THE OVERWORLD
-   Official Government Stylesheet
-   ============================================= */
-
 :root {
   --gov-blue: #1a4480;
   --gov-blue-dark: #162e51;
@@ -36,7 +31,7 @@ body {
   line-height: 1.6;
 }
 
-/* ---- TOP BANNER ---- */
+
 .top-banner {
   background: var(--gov-blue-dark);
   color: #c9d6e8;
@@ -56,7 +51,7 @@ body {
   color: #a8c0e0;
 }
 
-/* ---- HEADER ---- */
+
 header {
   background: var(--gov-blue-dark);
   border-bottom: 4px solid var(--gov-gold);
@@ -96,7 +91,7 @@ header {
   text-transform: uppercase;
 }
 
-/* ---- NAV ---- */
+
 nav {
   background: var(--gov-blue);
   border-bottom: 2px solid #0f2d57;
@@ -125,7 +120,7 @@ nav a:hover {
   color: var(--white);
 }
 
-/* ---- HERO ---- */
+
 .hero {
   background: linear-gradient(135deg, var(--gov-blue-dark) 0%, var(--gov-blue) 100%);
   padding: 60px 24px;
@@ -179,7 +174,7 @@ nav a:hover {
   margin: 0 auto;
 }
 
-/* ---- ALERT BAR ---- */
+
 .alert-bar {
   background: var(--alert-yellow);
   border-left: 6px solid var(--alert-yellow-border);
@@ -206,7 +201,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* ---- MAIN ---- */
 main {
   max-width: 1100px;
   margin: 0 auto;
@@ -216,7 +210,7 @@ main {
   gap: 36px;
 }
 
-/* ---- CARDS ---- */
+
 .card {
   background: var(--white);
   border: 1px solid var(--gov-border);
@@ -271,7 +265,7 @@ main {
   margin-top: 2px;
 }
 
-/* ---- QUICK LINKS ---- */
+
 .section-title {
   font-family: var(--font-serif);
   font-size: 1.4rem;
@@ -335,7 +329,7 @@ main {
   align-self: center;
 }
 
-/* ---- ABOUT BLURB ---- */
+
 .learn-more {
   display: inline-block;
   margin-top: 14px;
@@ -349,7 +343,7 @@ main {
   color: var(--gov-blue-dark);
 }
 
-/* ---- FOOTER ---- */
+
 footer {
   background: var(--gov-blue-dark);
   color: #a8c0e0;
@@ -405,7 +399,183 @@ footer {
   color: #6a88b0;
 }
 
-/* ---- RESPONSIVE ---- */
+
+nav a.nav-active {
+  background: var(--gov-blue-dark);
+  color: var(--white);
+  border-bottom: 3px solid var(--gov-gold);
+}
+
+
+.page-hero {
+  background: var(--gov-blue-dark);
+  border-bottom: 4px solid var(--gov-gold);
+  padding: 32px 24px;
+  color: var(--white);
+}
+
+.page-hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.page-breadcrumb {
+  font-size: 0.82rem;
+  color: #a8c0e0;
+  margin-bottom: 8px;
+}
+
+.page-breadcrumb a {
+  color: #a8c0e0;
+  text-decoration: underline;
+}
+
+.page-hero h1 {
+  font-family: var(--font-serif);
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.page-hero p {
+  color: #c0d6f0;
+  font-size: 0.97rem;
+}
+
+
+.info-box {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  background: var(--gov-blue-light);
+  border-left: 4px solid var(--gov-blue);
+  padding: 16px 18px;
+  margin-top: 18px;
+}
+
+.info-box-icon {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.info-box strong {
+  display: block;
+  color: var(--gov-blue-dark);
+  margin-bottom: 4px;
+  font-size: 0.97rem;
+}
+
+.info-box p {
+  font-size: 0.88rem;
+  color: var(--text-mid);
+  margin: 0 !important;
+}
+
+/* ---- VALUES GRID ---- */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.value-item {
+  background: var(--gov-gray-light);
+  border-top: 3px solid var(--gov-blue);
+  padding: 18px 16px;
+  text-align: center;
+}
+
+.value-icon {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.value-item strong {
+  display: block;
+  color: var(--gov-blue-dark);
+  font-size: 0.97rem;
+  margin-bottom: 6px;
+}
+
+.value-item p {
+  font-size: 0.85rem;
+  color: var(--gov-gray);
+  margin: 0 !important;
+}
+
+/* ---- PROJECT LIST ---- */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 18px;
+  border: 1px solid var(--gov-border);
+}
+
+.project-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--gov-border);
+}
+
+.project-item:last-child {
+  border-bottom: none;
+}
+
+.project-status {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  border-radius: 2px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.status-planned {
+  background: #e6e6e6;
+  color: #5b616b;
+}
+
+.status-active {
+  background: #e7f4e4;
+  color: #2e8540;
+  border: 1px solid #2e8540;
+}
+
+.project-info strong {
+  display: block;
+  color: var(--gov-blue-dark);
+  font-size: 0.97rem;
+  margin-bottom: 5px;
+}
+
+.project-info p {
+  font-size: 0.88rem;
+  color: var(--gov-gray);
+  margin: 0 !important;
+}
+
+/* ---- FOOTER DEPT ---- */
+.footer-dept {
+  display: block;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+  color: #6a88b0;
+}
+
+
 @media (max-width: 600px) {
   .header-title {
     font-size: 1.2rem;
