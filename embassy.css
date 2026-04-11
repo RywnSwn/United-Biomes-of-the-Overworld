@@ -1,9 +1,4 @@
-/* =============================================
-   NETHER EMBASSY PAGE - embassy.css
-   Bold redesign, breaks out of card pattern
-   ============================================= */
 
-/* ---- EMBASSY HERO ---- */
 .embassy-hero {
   position: relative;
   background: #0a0a0f;
@@ -168,13 +163,10 @@
 .embassy-section.embassy-section-dark {
   max-width: 100%;
   width: 100%;
-  align-items: flex-start;
-}
-
-.embassy-section.embassy-section-dark .embassy-section-label,
-.embassy-section.embassy-section-dark .embassy-section-body {
-  width: 100%;
-  max-width: 1100px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: calc(50% - 526px);
+  padding-right: calc(50% - 526px);
 }
 
 .embassy-section-label {
@@ -186,6 +178,9 @@
   font-family: var(--font-sans);
   border-left: 3px solid #8b0000;
   padding-left: 10px;
+  text-align: left;
+  width: 100%;
+  display: block;
 }
 
 .embassy-section-body h2 {
